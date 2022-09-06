@@ -13,7 +13,7 @@
 # Idea files
 /SalesForce/.idea/
 
-/SalesForce/.src/.test/.java/.constants/.Credentials.java
+/SalesForce/src/test/java/constants/Credentials.java
 
 # Package Files #
 *.jar
