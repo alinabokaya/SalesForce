@@ -27,7 +27,7 @@ public class CreateAccountTest extends BaseWithFactoryTest {
         newAccountModalPage.clickSaveButton();
         System.out.println(accountsPage.getCreatedName());
 
-        Assert.assertEquals(accountsPage.getCreatedName(), "Alina 123 LLC", "Name doesn't match!");
+        Assert.assertEquals(accountsPage.getCreatedName(), name, "Name doesn't match!");
 
     }
 }

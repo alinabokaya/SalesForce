@@ -21,7 +21,7 @@ public class NewAccountModalPage extends BasePage {
     }
 
     public NewAccountModalPage fillInAccountForm(NewAccountModel newAccount) {
-        accountNameInput.sendKeys("Alina 123 LLC");
+        accountNameInput.sendKeys((newAccount.getAccountName()));
         new TextInput(driver, "Phone").inputText(newAccount.getPhone());
         new DropdownList(driver, "Type").selectOptionList(newAccount.getType());
         new DropdownList(driver, "Industry").selectOptionList(newAccount.getIndustry());
